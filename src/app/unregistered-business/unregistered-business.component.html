@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name of the Business</th>
+            <th scope="col">Owner</th>
+            <th scope="col">Contact</th>
+           
+           
+            
+          </tr>
+        </thead>
+        <tbody *ngFor="let list of registeredBusiness">
+          
+          
+          <tr>
+            <th scope="row">{{list.name}}</th>
+            <td>{{list.business}}</td>
+            <td>{{list.contact}}</td>
+           
+            
+
+          </tr>
+        </tbody>
+
+        <angular2csv [data]="registeredBusiness" filename="Registered.csv" [options]="options">Download</angular2csv>
+      </table>

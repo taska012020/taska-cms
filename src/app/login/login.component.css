@@ -1,0 +1,20 @@
+.container{
+    background-color:aqua ;
+    width:50% ;
+    height: 20%;
+    margin-top: 80px;
+    padding-top: 20px;
+    border-radius: 25px;
+} 
+
+.login{
+    font-size :x-large;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+ .login_btn{
+     width: 20%;
+     background-color: yellow !important;
+     color: white !important;
+
+ } 

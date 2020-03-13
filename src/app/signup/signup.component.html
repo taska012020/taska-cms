@@ -1,0 +1,58 @@
+<section>
+    <div class="container" style="text-align: center;">
+        <div class="form-container">
+            <span class="login">Sign Up</span>
+
+        </div>
+        
+            <div class="input-group mb-4">
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <i class="fas fa-user"> </i>
+                    </span>
+
+                </div>
+                <span class="input-group-addon"> <i class="glyphicon glypicon-user"></i></span>
+                <input type="text" name="username" #username class="form-control input_user " placeholder="username">
+
+            </div>
+
+
+            <div class="input-group mb-4">
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+
+                </div>
+                <span class="input-group-addon"> <i class="glyphicon glypicon-envelope"></i></span>
+                <input type="text" name="input_mail" #email class="form-control input_mail" placeholder="email">
+
+            </div>
+
+
+
+            <div class="input-group mb-4">
+                <div class="input-group-append">
+                    <span class="input-group-text"> <i  class="fas fa-key"></i> </span>
+                </div>
+                <span class="input-group-addon"> <i class="glyphicon-lock"></i></span>
+                <input type="password" name="password" #password class="form-control input_pass" placeholder="password">
+                </div>
+               
+            
+            <div class="d-flex justify-content-center mt-3 login_container">
+                <button type="submit" name="button" class="btn login_btn" (click)="signup(username.value, email.value , password.value)">sign Up</button>
+
+            </div>
+
+        
+        <div class="mt-4">
+            <div class="d-flex justify-content-center links">
+             Already have an account? <a href="#" class="ml-2"> login</a>
+            </div>
+        </div>
+       
+    </div>
+
+</section>

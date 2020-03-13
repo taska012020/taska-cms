@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Id</th>
+            <th scope="col">Contact_Number</th>
+            <th scope="col">Disability</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Race</th>
+            <th scope="col">Service</th>
+            <th scope="col">Date</th>
+            
+          </tr>
+        </thead>
+        <tbody *ngFor="let list of attedanceList">
+          
+          
+          <tr>
+            <th scope="row">{{list.name}}</th>
+            <td>{{list.surname}}</td>
+            <td>{{list.id}}</td>
+            <td>{{list.contactno}}</td>
+            <td>{{list.disability}}</td>
+            <td>{{list.gender}}</td>
+            <td>{{list.race}}</td>
+            <td>{{list.service}}</td>
+            <td>{{list.date}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+
+       
+<angular2csv [data]="attedanceList" filename="attedanceList.csv" [options]="options">Download</angular2csv>
+      
+</div>
+
